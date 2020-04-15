@@ -1,0 +1,315 @@
+/*==================================
+     Header Section 
+================================*/
+.header-section{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+      z-index: 10;
+      padding: 40px 0 20px;
+}
+.header-section .left-col a{
+ color:#fff;
+ font-size:20px;
+ font-weight:bold;
+}
+.header-section .inner-content{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom:20px;
+
+}
+.header-section .right-col ul{
+  list-style:none;
+}
+.header-section .right-col ul li{
+    display: inline-block;
+    padding-left:20px;
+  }
+  .header-section .right-col ul li a{
+  color:#fff;
+  text-decoration: none;
+  }
+
+
+/* ============================
+       Hero Section 
+ ===============================*/
+ .hero-section{
+    background-size: cover!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    padding:140px 0px 50px;
+    color:#fff;
+    position: relative;
+    z-index: 1;
+ }
+ .hero-section:before{
+     content: "";
+     position: absolute;
+     background:rgba(0, 0, 0, 0.45);
+     left: 0;
+     right: 0;
+     top:0;
+     bottom: 0;
+     z-index: -1;
+ }
+ .hero-section h1{
+     font-size:60px;
+ }
+ .hero-text p {
+    max-width: 673px;
+}
+ .hero-section .hero-text{
+     margin-bottom:60px;
+ }
+
+ .hero-section ul{
+     list-style: none;
+     padding-left:0px;
+ }
+ .hero-section ul li{
+     display:inline-block;
+ }
+
+ .hero-section ul li a{
+     color:#ffc526;
+     font-weight:bold;
+    text-decoration: underline;
+    padding:0px 10px;
+ }
+ .hero-section ul li:first-child a{
+   border-right: 1px solid #ffc526;
+ }
+
+ .eir-process {
+    max-width: 830px;
+}
+ .eir-process ul{
+     padding-left: 0;
+ }
+ .eir-process ul li:first-child{
+     background:#34a6d6;
+ }
+ .eir-process ul li:nth-child(2){
+    background:#0c6f46;
+}
+.eir-process ul li:nth-child(3){
+    background:#c1951c;
+}
+.eir-process ul li:nth-child(4){
+    background:#a8420b;
+}
+.eir-process ul li:last-child{
+    background:#646464;
+}
+.eir-process ul li:last-child:before{
+    display:none;
+}
+
+ .hero-section .eir-process li {
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #ddd;
+    text-transform: uppercase;
+    width:135px;
+    height: 135px;
+    border-radius: 100%;
+    font-size: 14px;
+    box-shadow: 0px 0px 1px 1px #ffffff;
+    position:relative;
+}
+
+.hero-section .eir-process li:before {
+    content: "\f105";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    right: -20px;
+    font-size:20px;
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px 0 0 0 0px rgba(254, 254, 254, 0.87);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(254, 254, 254, 0);
+    }
+  }
+
+@media(min-width:768px){
+    .eir-process ul{
+        display: flex;
+        justify-content: space-between;
+        }
+    .hero-section .eir-process li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+}
+
+/*===============================
+    Activity Section 
+=============================*/
+.activity-sec h3{
+font-size:24px;
+color:#000;
+padding:20px 0px;
+border-bottom: 3px solid #000;
+}
+.card-img, .card-img-bottom, .card-img-top{
+    width:auto;
+}
+.card.single-card{
+    border:0px;
+}
+.activity-sec .accordion .card-body{
+    padding:0px;
+}
+.activity-sec .accordion .card-body .card{
+    background:#f3f3f3;
+    border:0px;
+    border-bottom:1px solid #ddd;
+    padding:20px;
+    margin-bottom: 0!important;
+}
+.accordion .card-header{
+    background:#fff;
+    padding: 0;
+}
+.inner-card-body h5.card-title {
+    color: #0096d5;
+    font-weight:400;
+}
+
+.accordion .card-header button{
+    font-size:20px;
+    color:#000;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding:10px 0px;
+}
+.accordion .card-header button:hover{
+  text-decoration: none;
+}
+.accordion>.card>.card-header{
+    padding:0;
+    border:0;
+}
+
+.activity-sec .card-body.inner-card-body {
+    padding: 0px 0px 0px 40px;
+}
+h5.card-title img {
+    margin-right: 7px;
+}
+
+.card .card-text{
+    margin-bottom:10px;
+}
+.card .left-col {
+    position:relative;
+}
+.card .left-col:before{
+    content:"";
+    position: absolute;
+    right:-20px;
+    border-right: 1px solid #ddd;
+    height: 100%;
+}
+ 
+
+
+@media(min-width:768px) and (max-width:1024px){
+    .hero-section h1 {
+        font-size: 40px;
+    }
+    .hero-section .eir-process li {
+    width: 110px;
+    height: 110px;
+    font-size: 11px;
+    line-height:1.2;
+    }
+ 
+}
+
+
+@media(max-width:767px){
+    .header-section{
+        padding:20px 0px;
+    }
+    .header-section .inner-content{
+        padding-bottom:10px;
+    }
+    .header-section .left-col a {
+        font-size: 15px;
+    }
+
+    .hero-section{
+    padding: 120px 0px 50px;
+    }
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .hero-section .eir-process li{
+        display:block;
+        margin:0 auto;
+        margin-bottom:40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section .eir-process li:before {
+        bottom: -33px;
+        font-size: 20px;
+        transform: rotate(90deg);
+        right:auto;
+  }
+  .hero-section .hero-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.activity-sec h3{
+    text-align:center;
+    font-size:20px;
+}
+.activity-sec .card-body.inner-card-body{
+    padding: 0;
+}
+.card .left-col {
+    position: relative;
+    margin-bottom: 25px;
+}
+.card .left-col:before{
+    display:none;
+}
+.accordion .card-header button,
+.inner-card-body h5.card-title{
+    font-size:18px;
+}
+}
+
+@media(max-width:540px){
+    .header-section{
+        text-align:center!important;
+    }
+    .header-section .right-col{
+        text-align:center!important;
+        margin-top:10px;
+    }
+    .header-section .right-col ul{
+        padding-left:0px;
+    }
+    .hero-section {
+        padding: 180px 0px 50px;
+    }
+}
